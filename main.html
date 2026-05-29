@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASCENSION | Dulatre Comics Entertainment</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="UI.css">
+<script src="Animation.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+ASCENSION
+<span>DULATRE COMICS ENTERTAINMENT</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#volumes">Volumes</a></li>
+<li><a href="#reader">Reader</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#creator">Creator</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>ASCENSION</h1>
+
+<h2>The Rise of Heaven, Humanity, and Chaos</h2>
+
+<p>
+A cosmic dark fantasy saga spanning billions of years —
+from the creation of Heaven and Lucifer’s rebellion,
+to Randy Randall’s rise as the final hope
+against Lord Malgaroth and the collapse of existence itself.
+</p>
+
+<div class="btn-group">
+
+<a href="#volumes" class="btn btn-primary">Explore Volumes</a>
+
+<a href="#reader" class="btn btn-secondary">Read Comic</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- VOLUMES -->
+
+<section id="volumes">
+
+<h2 class="section-title">THE FOUR VOLUMES</h2>
+
+<div class="volumes">
+
+<div class="card">
+<div class="card-image genesis"></div>
+
+<div class="card-content">
+<h3>GENESIS</h3>
+
+<p>
+The creation of Heaven,
+Lucifer’s downfall,
+and the beginning of cosmic war.
+</p>
+
+<span class="tag">War on Heaven</span>
+<span class="tag">Planet Sylar</span>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-image psalms"></div>
+
+<div class="card-content">
+<h3>PSALMS</h3>
+
+<p>
+The hidden bloodline of King David
+throughout history.
+</p>
+
+<span class="tag">King David</span>
+<span class="tag">Ancient Bloodline</span>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-image evolution"></div>
+
+<div class="card-content">
+<h3>EVOLUTION</h3>
+
+<p>
+Randy Randall’s brutal journey
+through corruption and martial arts.
+</p>
+
+<span class="tag">Chi</span>
+<span class="tag">Superhuman Serum</span>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card-image revolution"></div>
+
+<div class="card-content">
+<h3>REVOLUTION</h3>
+
+<p>
+Princess Florian arrives on Earth
+as Lord Malgaroth returns.
+</p>
+
+<span class="tag">Princess Florian</span>
+<span class="tag">Final War</span>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- READER -->
+
+<section class="reader-section" id="reader">
+
+<h2 class="section-title">ASCENSION READER</h2>
+
+<div class="reader-controls">
+
+<select id="volumeSelect">
+
+<option value="Genesis">Volume 1 — Genesis</option>
+<option value="Psalms">Volume 2 — Psalms</option>
+<option value="Evolution">Volume 3 — Evolution</option>
+<option value="Revolution">Volume 4 — Revolution</option>
+
+</select>
+
+<select id="chapterSelect">
+
+<option>Chapter 1 — The Beginning & The War on Heaven</option>
+
+</select>
+
+</div>
+
+<div class="mode-buttons">
+
+<button class="mode-btn active" id="verticalBtn">
+Vertical Scroll Mode
+</button>
+
+<button class="mode-btn" id="pageBtn">
+Page Mode
+</button>
+
+</div>
+
+<div class="manga-reader" id="mangaReader">
+
+<img class="comic-page" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
+
+<img class="comic-page" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop">
+
+<img class="comic-page" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1200&auto=format&fit=crop">
+
+<div class="end-comic">
+
+<h2>END OF THE COMIC</h2>
+
+<p>
+You have reached the end of this chapter.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PAGE MODE OVERLAY -->
+
+<div class="page-overlay" id="pageOverlay">
+
+<button class="close-page-mode" onclick="closePageMode()">
+✕
+</button>
+
+<div class="page-image-wrapper">
+
+<img
+id="singlePageView"
+class="single-page-view"
+src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<div class="page-navigation">
+
+<button onclick="previousPage()">
+PREVIOUS PAGE
+</button>
+
+<button onclick="nextPage()">
+NEXT PAGE
+</button>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+
+<h2 class="section-title">ABOUT ASCENSION</h2>
+
+<div class="about-box">
+
+<h3>THE ASCENSION SERIES</h3>
+
+<div class="about-placeholder">
+
+[ WRITE THE FULL LORE, HISTORY, STORY, CREATOR NOTES, AND INFORMATION ABOUT ASCENSION HERE ]
+
+<br><br>
+
+You can manually edit this section later.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ADMIN -->
+
+<section id="adminPanel">
+
+<h2 class="section-title">ADMIN UPLOAD SYSTEM</h2>
+
+<div class="admin-box">
+
+<div class="upload-group">
+
+<h3>UPLOAD SINGLE COMIC IMAGE</h3>
+
+<input type="text" value="ASCENSION" readonly>
+
+<input type="text" placeholder="Volume Number">
+
+<input type="text" placeholder="Chapter Number & Name">
+
+<input type="file" accept=".jpeg,.jpg">
+
+<button onclick="uploadSingleImage()">
+UPLOAD IMAGE
+</button>
+
+<p class="admin-note">
+JPEG ONLY.
+Uploads one single comic image
+for a specific chapter.
+</p>
+
+</div>
+
+<div class="upload-group">
+
+<h4>UPLOAD VOLUME COVER PAGES</h4>
+
+<input type="text" placeholder="Volume Number">
+
+<select>
+
+<option>Main Cover Page</option>
+<option>Cover Page 1</option>
+<option>Cover Page 2</option>
+<option>Cover Page 3</option>
+
+</select>
+
+<input type="file" accept=".png">
+
+<button onclick="uploadCoverPage()">
+UPLOAD COVER PAGE
+</button>
+
+<p class="admin-note">
+PNG ONLY.
+Used for cinematic volume covers.
+</p>
+
+</div>
+
+<div class="upload-group">
+
+<h4>UPLOAD COMIC PANELS</h4>
+
+<input type="text" placeholder="Volume Number">
+
+<input type="text" placeholder="Chapter Number & Name">
+
+<select>
+
+<option>B6</option>
+<option>B5</option>
+<option>A5</option>
+<option>A4</option>
+
+</select>
+
+<input type="file"
+id="panelUpload"
+multiple
+accept=".png,.jpg,.jpeg">
+
+<button onclick="uploadPanels()">
+UPLOAD PANELS
+</button>
+
+<p class="admin-note">
+
+Supports:
+PNG / JPEG only
+
+<br><br>
+
+Maximum:
+20 images per upload batch.
+
+<br><br>
+
+Supported Sizes:
+A4, A5, B5, B6
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CREATOR -->
+
+<section id="creator">
+
+<h2 class="section-title">CREATOR BITOS</h2>
+
+<div class="creator">
+
+<img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop">
+
+<div class="creator-info">
+
+<h3>Dulatre Comics Entertainment</h3>
+
+<p>
+ASCENSION is an original multimedia comic universe
+combining cosmic fantasy,
+biblical mythology,
+science fiction,
+martial arts,
+anime inspiration,
+and multiversal storytelling.
+</p>
+
+<div class="socials">
+
+<a href="https://www.facebook.com/NicoleKim.Bitos">Facebook Page</a>
+<a href="https://www.youtube.com/@thebitoschannel">YouTube Channel</a>
+<a href="https://globalcomix.com/a/dulatre-comics-entertainment-inc-">GlobalComix</a>
+<a href="https://www.instagram.com/dulatrecomics/">Instagram</a>
+<a href="">Twitter</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>ASCENSION</h2>
+
+<p>
+© 2026 Dulatre Comics Entertainment
+</p>
+
+</footer>
+
+</body>
+</html>
