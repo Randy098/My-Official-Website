@@ -1,5 +1,3 @@
-/* HEADER */
-
 window.addEventListener('scroll',()=>{
 
 const header=document.querySelector('header');
@@ -12,7 +10,6 @@ header.style.background='rgba(0,0,0,0.82)';
 
 });
 
-/* CHAPTER DATABASE */
 
 const chapterDatabase = {
 
@@ -47,8 +44,6 @@ const defaultImages=[
 
 const comicImages=[...defaultImages];
 
-/* VOLUME CHANGE */
-
 volumeSelect.addEventListener("change",()=>{
 
 const selectedVolume=volumeSelect.value;
@@ -61,7 +56,6 @@ const option=document.createElement("option");
 option.textContent="No Chapters Available Yet";
 chapterSelect.appendChild(option);
 
-/* REMOVE PANELS */
 
 mangaReader.innerHTML=`
 
@@ -84,8 +78,6 @@ option.textContent=chapter;
 chapterSelect.appendChild(option);
 
 });
-
-/* RESTORE DEFAULT */
 
 mangaReader.innerHTML=`
 
@@ -114,13 +106,11 @@ comicImages.push(...defaultImages);
 
 });
 
-/* ADMIN LOGIN */
-
 let password=prompt(
 "Enter Admin Password\n\nHint: I RECOMMEND YOU LEAVE IT BLANK AND JUST CLICK OK"
 );
 
-if(password==="creatorbitos"){
+if(password==="creatorbitos143"){
 
 document.getElementById("adminPanel").style.display="block";
 
@@ -130,7 +120,6 @@ alert("WRONG PASSWORD, TRY AGAIN");
 
 }
 
-/* READER MODES */
 
 const verticalBtn=document.getElementById("verticalBtn");
 const pageBtn=document.getElementById("pageBtn");
@@ -164,7 +153,6 @@ updatePageMode();
 
 });
 
-/* PAGE MODE */
 
 let currentPage=0;
 
@@ -212,7 +200,6 @@ pageBtn.classList.remove("active");
 
 }
 
-/* SINGLE IMAGE */
 
 function uploadSingleImage(){
 
@@ -220,7 +207,6 @@ alert("Single comic image uploaded successfully.");
 
 }
 
-/* COVER PAGE */
 
 function uploadCoverPage(){
 
@@ -228,7 +214,6 @@ alert("Cover page uploaded successfully.");
 
 }
 
-/* PANELS */
 
 function uploadPanels(){
 
