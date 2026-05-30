@@ -10,7 +10,6 @@ header.style.background='rgba(0,0,0,0.82)';
 
 });
 
-
 const chapterDatabase = {
 
 Genesis: [
@@ -55,7 +54,6 @@ if(chapterDatabase[selectedVolume].length===0){
 const option=document.createElement("option");
 option.textContent="No Chapters Available Yet";
 chapterSelect.appendChild(option);
-
 
 mangaReader.innerHTML=`
 
@@ -120,6 +118,7 @@ alert("WRONG PASSWORD, TRY AGAIN");
 
 }
 
+/* READER MODES */
 
 const verticalBtn=document.getElementById("verticalBtn");
 const pageBtn=document.getElementById("pageBtn");
@@ -152,7 +151,6 @@ pageOverlay.style.display="flex";
 updatePageMode();
 
 });
-
 
 let currentPage=0;
 
@@ -200,20 +198,17 @@ pageBtn.classList.remove("active");
 
 }
 
-
 function uploadSingleImage(){
 
 alert("Single comic image uploaded successfully.");
 
 }
 
-
 function uploadCoverPage(){
 
 alert("Cover page uploaded successfully.");
 
 }
-
 
 function uploadPanels(){
 
