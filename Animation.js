@@ -1,4 +1,4 @@
-alert("JS Loaded Successfully");
+alert("WELCOME USER!");
 window.addEventListener('scroll',()=>{
 
 const header=document.querySelector('header');
