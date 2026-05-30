@@ -23,7 +23,6 @@ background:gold;
 border-radius:10px;
 }
 
-/* HEADER */
 
 header{
 position:fixed;
@@ -74,7 +73,6 @@ nav ul li a:hover{
 color:gold;
 }
 
-/* HERO */
 
 .hero{
 min-height:100vh;
@@ -149,7 +147,6 @@ background:gold;
 color:black;
 }
 
-/* SECTION */
 
 section{
 padding:90px 7%;
@@ -163,7 +160,6 @@ text-align:center;
 margin-bottom:60px;
 }
 
-/* VOLUMES */
 
 .volumes{
 display:grid;
@@ -233,7 +229,6 @@ font-size:0.8rem;
 margin:5px;
 }
 
-/* READER */
 
 .reader-section{
 background:#090909;
@@ -317,7 +312,6 @@ transform:translateY(0);
 
 }
 
-/* END OF COMIC */
 
 .end-comic{
 text-align:center;
@@ -337,7 +331,6 @@ margin-bottom:15px;
 color:#aaa;
 }
 
-/* EMPTY PANELS */
 
 .no-panels{
 text-align:center;
@@ -348,7 +341,6 @@ border:1px dashed rgba(255,215,0,0.2);
 border-radius:20px;
 }
 
-/* ABOUT */
 
 .about-section{
 background:#090909;
@@ -381,7 +373,6 @@ color:#888;
 line-height:1.9;
 }
 
-/* PAGE MODE EXPANDED */
 
 .page-overlay{
 position:fixed;
@@ -482,7 +473,6 @@ background:gold;
 color:black;
 }
 
-/* ADMIN */
 
 #adminPanel{
 display:none;
@@ -548,7 +538,6 @@ color:#999;
 line-height:1.8;
 }
 
-/* CREATOR */
 
 .creator{
 display:grid;
@@ -596,8 +585,6 @@ background:gold;
 color:black;
 }
 
-/* FOOTER */
-
 footer{
 text-align:center;
 padding:40px 20px;
@@ -611,7 +598,6 @@ color:gold;
 margin-bottom:10px;
 }
 
-/* MOBILE */
 
 @media(max-width:768px){
 
